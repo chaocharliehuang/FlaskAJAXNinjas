@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #wrapper {
+                width: 70%;
+                margin: 40px auto;
+            }
+
+            #buttons {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="image"></div>
+            <!-- <img src="{{ url_for('static', filename='imgs/my_img.png') }}"> -->
+
+            <div id="buttons">
+                <button class="btn" type="submit" id="red">red</button>
+                <button class="btn" type="submit" id="blue">blue</button>
+                <button class="btn" type="submit" id="orange">orange</button>
+                <button class="btn" type="submit" id="purple">purple</button>
+            </div>
+        </div>
+        
+        <!--***********************LOAD SCRIPTS***************************-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
