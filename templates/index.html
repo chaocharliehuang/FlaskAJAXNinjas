@@ -10,6 +10,14 @@
                 margin: 40px auto;
             }
 
+            #heading, #img-div {
+                text-align: center;
+            }
+
+            #img-div {
+                margin-bottom: 40px;
+            }
+
             #buttons {
                 display: flex;
                 justify-content: space-between;
@@ -23,8 +31,8 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="image"></div>
-            <!-- <img src="{{ url_for('static', filename='imgs/my_img.png') }}"> -->
+            <div id="heading"></div>
+            <div id="img-div"></div>
 
             <div id="buttons">
                 <button class="btn" type="submit" id="red">red</button>
