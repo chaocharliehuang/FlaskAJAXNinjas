@@ -21,11 +21,16 @@
             #buttons {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 40px;
             }
 
             .btn {
                 width: 100px;
                 height: 50px;
+            }
+
+            #custom-color{
+                text-align: center;
             }
         </style>
     </head>
@@ -39,6 +44,14 @@
                 <button class="btn" type="submit" id="blue">blue</button>
                 <button class="btn" type="submit" id="orange">orange</button>
                 <button class="btn" type="submit" id="purple">purple</button>
+            </div>
+
+            <div id="custom-color">
+                <p>Or choose a custom color:</p>
+                <form id="form-color" method='post'>
+                    <input type="text" id="customcolor">
+                    <button type="submit">Enter</button>
+                </form>
             </div>
         </div>
         
